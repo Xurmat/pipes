@@ -45,7 +45,8 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+              "zone.js",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -55,7 +56,8 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"  
             ],
             "scripts": [],
             "server": "src/main.server.ts",
@@ -108,7 +110,8 @@
           "options": {
             "polyfills": [
               "zone.js",
-              "zone.js/testing"
+              "zone.js/testing",
+              "@angular/localize/init"
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
@@ -125,5 +128,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "93b47c6b-cf31-4a6c-af9b-d498d0b87e66"
   }
 }
